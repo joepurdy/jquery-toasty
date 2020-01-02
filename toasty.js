@@ -1,11 +1,11 @@
 /*
- * jQuery Toasty! Plugin 1.0
- * https://github.com/joepurdy/jquery-toasty
- * Copyright 2014, Joe Purdy
+ * jQuery Toasty! Plugin 1.1
+ * https://github.com/joepurdy/toasty.js
+ * Copyright 2020, Joe Purdy
  * Inspired by ZURB's jQuery Raptorize Plugin 1.0 (http://www.ZURB.com/playground)
  * This is a redesigned version of their plugin in the style of Mortal Kombat's Toasty! easter egg
  * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
+ * https://purdy.mit-license.org/
 */
 
 
@@ -25,20 +25,15 @@
         return this.each(function() {
 
       var _this = $(this);
-      var audioSupported = false;
-      //Stupid Browser Checking which should be in jQuery Support
-      if ($.browser.mozilla && $.browser.version.substr(0, 5) >= "1.9.2" || $.browser.webkit) { 
-        audioSupported = true;
-      }
       
       //Toasty Vars
       var toastyImageMarkup = '<img id="elDan" style="display: none" src="toasty.png" />'
-      var toastyAudioMarkup = '<audio id="Toasty!" preload="auto"><source src="toasty-sound.mp3" /><source src="toasty-sound.ogg" /></audio>'; 
+      var toastyAudioMarkup = '<audio id="Toasty!" preload="auto"><source src="toasty.mp3" /><source src="toasty.ogg" /></audio>'; 
       var locked = false;
       
       //Append Toasty and Style
       $('body').append(toastyImageMarkup);
-      if(audioSupported) { $('body').append(toastyAudioMarkup); }
+      $('body').append(toastyAudioMarkup);
       var DanForden = $('#elDan').css({
         "position":"fixed",
         "bottom": "0",
@@ -50,21 +45,15 @@
       function init() {
       
         //Sound Hilarity
-        if(audioSupported) { 
-          function playSound() {
-            document.getElementById('Toasty!').play();
-          }
-          playSound();
-        }
+        document.getElementById('Toasty!').play();
                 
         // Movement Hilarity  
         DanForden.animate({
-		"left" : "-=695px"
-		}, "fast").delay(500).animate({
-		"left" : "+=695px"
-		}, "slow"
-		);
-		}
+	  "left" : "-=695px"
+	}, "fast").delay(500).animate({
+	  "left" : "+=695px"
+	}, "slow");
+      }
       
       //Determine Entrance
       if(options.enterOn == 'timer') {

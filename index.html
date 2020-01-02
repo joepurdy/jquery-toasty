@@ -1,82 +1,142 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Toasty! : Mortal Kombat&#39;s Toasty! easter egg for the web" />
+    <meta
+      name="description"
+      content="Toasty! : Mortal Kombat&#39;s Toasty! easter egg for the web"
+    />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="stylesheets/stylesheet.css"
+    />
 
-    <title>Toasty!</title>
-    
+    <title>Toasty.js</title>
+
     <!-- jQuery: Grab Google CDN jQuery. fall back to local if necessary -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	  <script>!window.jQuery && document.write('<script src="jquery-1.8.0.min.js"><\/script>')</script>
-	
-	  <!-- The toasty file  -->
-	  <script src="jquery.toasty.js"></script>
-	
-	  <!-- For the button version -->
-	  <script type="text/javascript">
-		  $(window).load(function() {
-			  $('.button').toasty();
-		  });
-	  </script>
-	
-	  <!-- For the Konami Code version -->
-	  <script type="text/javascript">
-		  $(window).load(function() {
-			  $('.button').toasty({
-				  'enterOn' : 'konami-code'
-			  });
-		  });
-	  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      !window.jQuery &&
+        document.write('<script src="jquery-2.2.4.min.js"><\/script>');
+    </script>
+
+    <!-- The toasty file  -->
+    <script src="toasty.js"></script>
+
+    <!-- For the button version -->
+    <script type="text/javascript">
+      $(window).load(function() {
+        $(".button").toasty();
+      });
+    </script>
+
+    <!-- For the Konami Code version -->
+    <script type="text/javascript">
+      $(window).load(function() {
+        $(".button").toasty({
+          enterOn: "konami-code"
+        });
+      });
+    </script>
   </head>
 
   <body>
-
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/joepurdy/jquery-toasty">View on GitHub</a>
+      <header class="inner">
+        <a id="forkme_banner" href="https://github.com/joepurdy/toasty.js"
+          >View on GitHub</a
+        >
 
-          <h1 id="project_title">Toasty!</h1>
-          <h2 id="project_tagline">Mortal Kombat&#39;s Toasty! easter egg for the web</h2>
+        <h1 id="project_title">Toasty.js</h1>
+        <h2 id="project_tagline">
+          Mortal Kombat&#39;s Toasty! easter egg for the web
+        </h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/joepurdy/jquery-toasty/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/joepurdy/jquery-toasty/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+        <section id="downloads">
+          <a
+            class="zip_download_link"
+            href="https://github.com/joepurdy/toasty.js/zipball/master"
+            >Download this project as a .zip file</a
+          >
+          <a
+            class="tar_download_link"
+            href="https://github.com/joepurdy/toasty.js/tarball/master"
+            >Download this project as a tar.gz file</a
+          >
+        </section>
+      </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="get-over-here" class="anchor" href="#get-over-here"><span class="octicon octicon-link"></span></a>GET OVER HERE</h3>
+          <a name="get-over-here" class="anchor" href="#get-over-here"
+            ><span class="octicon octicon-link"></span></a
+          >GET OVER HERE
+        </h3>
 
-<p>Toasty! is a simple jquery plugin based on the Raptorize plugin featured on ZURB Playground (<a href="http://zurb.com/playground/jquery-raptorize">http://zurb.com/playground/jquery-raptorize</a>) and created by Mark Hayes (<a href="https://github.com/mhayes" class="user-mention">@mhayes</a>). The Toasty! plugin emulates the easter egg of the same name found in the Mortal Kombat video games, for an example of the easter egg you can watch <a href="http://www.youtube.com/watch?v=aLaERVA-P6o">this</a> video. </p>
+        <p>
+          Toasty.js is a simple jquery plugin based on the Raptorize plugin
+          featured on ZURB Playground (<a
+            href="http://zurb.com/playground/jquery-raptorize"
+            >http://zurb.com/playground/jquery-raptorize</a
+          >) and created by Mark Hayes (<a
+            href="https://github.com/mhayes"
+            class="user-mention"
+            >@mhayes</a
+          >). The Toasty.js plugin emulates the easter egg of the same name found
+          in the Mortal Kombat video games, for an example of the easter egg you
+          can watch
+          <a href="http://www.youtube.com/watch?v=aLaERVA-P6o">this</a> video.
+        </p>
 
-<h3>
-<a name="implementation" class="anchor" href="#implementation"><span class="octicon octicon-link"></span></a>Implementation</h3>
+        <h3>
+          <a name="implementation" class="anchor" href="#implementation"
+            ><span class="octicon octicon-link"></span></a
+          >Implementation
+        </h3>
 
-<p>Adding Toasty! to your site is as simple as attaching the scripts to activate the plugin in the head of each page you'd like it in. Add the following to the head of each Toasty! page:</p>
+        <p>
+          Adding Toasty.js to your site is as simple as attaching the scripts to
+          activate the plugin in the head of each page you'd like it in. Add the
+          following to the head of each Toasty! page:
+        </p>
 
-<pre><code>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script&gt;!window.jQuery &amp;&amp; document.write('&lt;script src="jquery-1.8.0.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+        <pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;!window.jQuery &amp;&amp; document.write('&lt;script src="jquery-2.2.4.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
 &lt;script src="jquery.toasty.js"&gt;&lt;/script&gt;
 </code></pre>
 
-<p><strong>Technical Note:</strong> Keep in mind that the 'script src=' values must point to the location you've saved the corresponding Toasty! files.</p>
+        <p>
+          <strong>Technical Note:</strong> Keep in mind that the 'script src='
+          values must point to the location you've saved the corresponding
+          Toasty.js files.
+        </p>
 
-<h3>
-<a name="choose-your-destiny" class="anchor" href="#choose-your-destiny"><span class="octicon octicon-link"></span></a>Choose your destiny</h3>
+        <h3>
+          <a
+            name="choose-your-destiny"
+            class="anchor"
+            href="#choose-your-destiny"
+            ><span class="octicon octicon-link"></span></a
+          >Choose your destiny
+        </h3>
 
-<p>Toasty! can be activated on a <a href="#" class="button">click</a> event, a timer which waits for a set time after the page is loaded, or the legendary Konami Code. Each of these activation methods has their own script for the head section of your webpage as follows:</p>
+        <p>
+          Toasty.js can be activated on a
+          <a href="#" class="button">click</a> event, a timer which waits for a
+          set time after the page is loaded, or the legendary Konami Code. Each
+          of these activation methods has their own script for the head section
+          of your webpage as follows:
+        </p>
 
-<pre><code>&lt;!-- For the button version --&gt;
+        <pre><code>&lt;!-- For the button version --&gt;
 &lt;script type="text/javascript"&gt;
     $(window).load(function() {
         $('.button').toasty();
@@ -103,24 +163,34 @@
 &lt;/script&gt;
 </code></pre>
 
-<p><strong>Technical Note:</strong> The 'delayTime' : 2000 entry under the Timer version dictates how long the script waits in milliseconds after the page loads before activating the Toasty! plugin. The Konami Code version will only activate once per page load.</p>
+        <p>
+          <strong>Technical Note:</strong> The 'delayTime' : 2000 entry under
+          the Timer version dictates how long the script waits in milliseconds
+          after the page loads before activating the Toasty! plugin. The Konami
+          Code version will only activate once per page load.
+        </p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+        <h3>
+          <a name="support-or-contact" class="anchor" href="#support-or-contact"
+            ><span class="octicon octicon-link"></span></a
+          >Support or Contact
+        </h3>
 
-<p>Having trouble getting things set up? Shoot me an email at <a href="mailto:support@aperture.computer">support@aperture.computer</a> with the subject "Toasty! Help" and I'll do my best to point you in the right direction.</p>
+        <p>
+          Having trouble getting things set up? <a href="https://github.com/joepurdy/toasty.js/issues/new">Open an issue</a> and I'll make a best effort to respond when I can.
+        </p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Toasty! maintained by <a href="https://github.com/joepurdy">joepurdy</a></p>
+        <p class="copyright">
+          Toasty.js maintained by
+          <a href="https://github.com/joepurdy">joepurdy</a>
+        </p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
