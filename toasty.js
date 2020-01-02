@@ -1,11 +1,11 @@
 /*
- * jQuery Toasty! Plugin 1.0
- * https://github.com/joepurdy/jquery-toasty
- * Copyright 2014, Joe Purdy
+ * jQuery Toasty! Plugin 1.1
+ * https://github.com/joepurdy/toasty.js
+ * Copyright 2020, Joe Purdy
  * Inspired by ZURB's jQuery Raptorize Plugin 1.0 (http://www.ZURB.com/playground)
  * This is a redesigned version of their plugin in the style of Mortal Kombat's Toasty! easter egg
  * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
+ * https://purdy.mit-license.org/
 */
 
 
@@ -28,7 +28,7 @@
       
       //Toasty Vars
       var toastyImageMarkup = '<img id="elDan" style="display: none" src="toasty.png" />'
-      var toastyAudioMarkup = '<audio id="Toasty!" preload="auto"><source src="toasty-sound.mp3" /><source src="toasty-sound.ogg" /></audio>'; 
+      var toastyAudioMarkup = '<audio id="Toasty!" preload="auto"><source src="toasty.mp3" /><source src="toasty.ogg" /></audio>'; 
       var locked = false;
       
       //Append Toasty and Style
