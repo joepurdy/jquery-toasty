@@ -10,8 +10,8 @@ Toasty! is a simple jquery plugin based on the Raptorize plugin featured on ZURB
 Adding Toasty! to your site is as simple as attaching the scripts to activate the plugin in the head of each page you'd like it in. Add the following to the head of each Toasty! page:
 
 ```
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script>!window.jQuery && document.write('<script src="jquery-1.8.0.min.js"><\/script>')</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>!window.jQuery && document.write('<script src="jquery-1.12.4.min.js"><\/script>')</script>
 <script src="jquery.toasty.js"></script>
 ```
 
@@ -51,4 +51,4 @@ Toasty! can be activated on a click event, a timer which waits for a set time af
 **Technical Note:** The 'delayTime' : 2000 entry under the Timer version dictates how long the script waits in milliseconds after the page loads before activating the Toasty! plugin. The Konami Code version will only activate once per page load.
 
 ### Support or Contact
-Having trouble getting things set up? Shoot me an email at joe@poweredbypurdy.com with the subject "Toasty! Help" and I'll do my best to point you in the right direction.
+Having trouble getting things set up? Open an issue and I'll make a best effort to respond when I can.
